@@ -6,8 +6,7 @@ pipeline{
     stages{
         stage("sonar quality check"){
             any {
-                docker {
-                    image 'openjdk:11'
+                   image 'openjdk:11'
                 }
             }
             steps{
@@ -20,5 +19,5 @@ pipeline{
 }
 }
 }
-}
+
 
